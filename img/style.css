@@ -1,0 +1,373 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+ 
+/* ================= header part ====================== */
+
+  span {
+    color: #93cb52;
+     
+}
+ header i {
+     
+    margin-right: 5px;
+}
+header h1 {
+    font-size: 1.5rem;
+    margin-left: 3px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+     z-index: 1;
+     position: sticky;
+     top: 0;
+     padding: 1rem;
+     
+}
+
+.hamburger {
+    display: none;
+} 
+.main-nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li a {
+    padding: 0.7rem;
+    margin: 0px .4rem;
+}
+
+.main-nav li a:hover {
+    background-color: #93cb52;
+    border-radius: 10px;
+}
+
+
+
+/* ================= main part ====================== */
+
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.275),rgba(0, 0, 0, 0.275)) , url(../img/showcase.jpg) no-repeat center center/cover ;
+    padding: 1rem;
+   text-align: center;
+}
+
+.main-container h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.main-container p {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 26px;
+    margin-top: 20px;
+}
+
+.main-container .btn{
+    display: inline-block;
+     text-decoration: none;
+     padding: .6rem 1.4rem;
+     background-color:#93cb52 ;
+     color: white;
+     border-radius: 5px;
+}
+
+
+
+/* ================= section1 part ====================== */
+
+
+.what-we-do {
+    padding: 1.4rem;
+    background-color: #f4f4f4;
+}
+
+.box {
+    display: flex;
+}
+.box i {
+    margin-right: 3px;
+}
+.section1-head h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.what-we-do h2 {
+    font-size: 1.17rem;
+}
+.what-we-do p {
+    font-size: 1rem;
+}
+.grid1-container{
+    max-width: 80%;
+    margin: 0px auto;
+    display: flex;
+}
+.what-we-do i {
+    background-color: #93cb52;
+    border-radius: 50%;
+    padding: 1.4rem;
+    margin-bottom: 10px;
+}
+.box {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* ================= section2 part ====================== */
+
+.who-we-are {
+    display: flex;
+   height: auto;
+    
+}
+.who-we-are div {
+    flex: 1;
+}
+.who-we-are-image {
+    background: url(../img/people.jpg) no-repeat center center/cover;
+    object-fit: cover;
+}
+.who-we-are-left {
+    background-color: #333;
+    color: white;
+    padding: 1.9rem;
+
+}
+.who-we-are-left li{
+    
+    list-style: none;
+    border-bottom: #3f3f3f dotted 1px;
+    padding: 5px 0px;
+}
+ .who-we-are h3 {
+     margin: 1rem 0px;
+ }
+ .who-we-are p {
+     margin: 1rem 0px;
+ }
+
+ .who-we-are h1 {
+     font-size: 2rem;
+     margin-top: 1rem;
+ }
+
+
+ /* ================= section3 part ====================== */
+
+
+ .our-clients  h1{
+     text-align: center;
+     font-size: 2rem;
+     margin: 1.7rem 0px;
+ }
+
+ .icon-grid  {
+     width: 90%;
+     margin: 0px auto;
+     text-align: center;
+ }
+ .icon-grid img {
+     width: 124px;
+     margin:0px 3% ;
+ }
+
+ /* ================= section4 part ====================== */
+.contact{
+    display: flex;
+    margin-top: 2rem;
+}
+
+ .contact-form {
+     background-color: #93cb52;
+     color: white;
+     flex: 1;
+     padding: 2rem;
+     flex-basis: 50%;
+ }
+ .contact-img{
+     flex: 2;
+     flex-basis: 50%;
+     
+ }
+ .btn-dark {
+     display: block;
+     background-color:#333;
+     color: white;
+     text-decoration: none;
+     padding: .4rem  ;
+     margin-top: 10px;
+     border-radius: 10px;
+     text-align: center;
+ }
+
+ .contact-form h1 {
+     font-size: 2rem;
+ }
+ .contact-form p {
+     font-size: 1rem;
+     margin-bottom: 10px;
+ }
+ label {
+     display: block;
+ }
+.contact-form input {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+.contact-form div {
+    margin-left: 10px;
+}
+.contact-img{
+    background: url(../img/map-3352919_640.jpg) no-repeat center center/cover;
+}
+
+
+/* =======================footer=============== */
+
+footer {
+    color: white;
+    background-color: #333;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* =====================  medai queris ===================== */
+
+@media (max-width:1225px) {
+    .box {
+       display: flex;
+       flex-direction: column;
+    }
+    .box i {
+         width: 80px;
+         margin: 10px auto;
+     }
+     .box h1 {
+         margin-bottom: 5px;
+     }
+    .grid1-container{
+        text-align: center;
+    } 
+    .icon-grid {
+        max-width: 100%;
+    }
+
+}
+@media (max-width:1036px){
+    .icon-grid img{
+          width:80px ;
+    }
+}
+ 
+
+@media (max-width:1000px) {
+    
+    .grid1-container{
+        max-width: 100%;
+        flex: none;
+    }
+    
+}
+
+@media (max-width:745px){
+    
+    .grid1-container{
+        display: flex;
+        flex-direction: column;
+        
+    } 
+  
+   .icon-grid img {
+       width: 50px;
+   }
+.who-we-are-image {
+    display: none;
+    
+}
+.contact-img {
+    display: none;
+}
+ header {
+     flex-direction: column;
+ }
+header nav ul {
+     flex-direction: column;
+      
+      
+}
+header ul li {
+     display: none;
+}
+header li a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+
+}
+.main-nav li a:hover  {
+    background-color: #3f3f3f;
+   
+
+}
+header li {
+    width: 100%;
+}
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+}
+.show-nav {
+    display: block;
+   
+}
+
+
+
+}
+@media (max-width:445px) {
+        .icon-grid  {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    } 
+    .icon-grid img {
+        width: 120px;
+    }  
+}
